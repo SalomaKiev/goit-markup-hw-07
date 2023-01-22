@@ -11,6 +11,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .container {
         width: 426px;
+        
         margin-left: auto;
         margin-right: auto;
     }
@@ -21,6 +22,8 @@ body {
 @media screen and (min-width: 768px) { 
     .container {
         width: 766px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
@@ -37,7 +40,6 @@ body {
       width: 428px; 
       margin-left: auto;
       margin-right: auto;
-      text-align: center;
     }
   }
 
@@ -87,6 +89,7 @@ nav {
         margin: 0; 
         padding: 0;
         display: flex;
+        align-items: center;
     }
 }
 
@@ -110,8 +113,8 @@ ul {
 
 @media screen and (min-width: 768px) { 
     .contacts {
-        display: flex;
-        margin-left: auto;
+        display: block;
+        margin-left: 118px;
     }
 }
 
@@ -350,7 +353,22 @@ ul {
 }
 
 .tel {
-    margin-left: 40px;
+
+}
+
+@media screen and (min-width: 1200px) { 
+    .tel {
+        margin-left: 40px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1200px) { 
+    .hero {
+        margin-left: 40px;
+    }
+    
 }
 
 .adress {
@@ -388,14 +406,14 @@ ul {
 
 @media screen and (min-width: 768px) { 
     .hero {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
+        align-items: center;
+        max-width: 492px;
+        font-weight: 500;
         font-size: 56px;
-        line-height: 60px;
-        text-align: center;
+        line-height: 1.07;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+        margin: 0 auto 40px auto;
     }
     
 }
@@ -482,8 +500,9 @@ ul {
 }
 
 @media screen and (min-width: 1200px) { 
-    .description {
+    .mobile-description {
         display: none;
+        
     }
 }
 
@@ -559,11 +578,25 @@ ul {
 }
 
 .mobile-descr-list {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
+
+}
+
+@media screen and (min-width: 768px) { 
+    .mobile-descr-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        column-gap: 24px;
+        row-gap: 72px;
+        
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .mobile-li{
+        width: 100%;
+        max-width: 356px;
+    }
 }
 
 .back-descr {
@@ -689,12 +722,17 @@ ul {
 @media screen and (min-width: 768px) { 
     .people-list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 56px;
+        flex-direction: row;
     }
 }
 
 @media screen and (min-width: 1200px) { 
     .people-list {
-
+        column-gap: 0;
     }
 }
 
@@ -809,6 +847,13 @@ ul {
     margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) { 
+    .foot-text {
+        text-align: start;
+        
+    }
+}
+
 .links-container {
 
 }
@@ -816,12 +861,15 @@ ul {
 @media screen and (min-width: 480px) {
     .links-container{
         margin-bottom: 72px;
+        text-align: center;
     }
   }
 
 @media screen and (min-width: 768px) { 
     .links-container {
-        display: flex;
+        width: 208px;
+
+        margin: 0;
     }
 }
 
@@ -846,6 +894,14 @@ img {
     width: 100%; 
     height: auto; 
 }
+
+@media screen and (min-width: 768px) { 
+    img {
+        width: 264px;
+        height: 260px;
+    }
+}
+
 
 .cont {
     position: relative;
@@ -1118,12 +1174,13 @@ img {
 @media screen and (min-width: 480px) {
     .container-footeer {
         margin-bottom: 72px;
+        text-align: center  ;
     }
   }
 
 @media screen and (min-width: 768px) { 
     .container-footeer {
-
+        text-align: start;
     }
 }
 
@@ -1165,7 +1222,7 @@ img {
 
 @media screen and (min-width: 768px) { 
     .social-links-foot {
-
+        gap: 16px;
     }
 }
 
@@ -1328,7 +1385,7 @@ li {
 
 @media screen and (min-width: 768px) { 
     .mailing-form {
-
+        display: flex;
     }
 }
 
@@ -1359,7 +1416,8 @@ li {
 
 @media screen and (min-width: 768px) { 
     .mailing-title {
-
+        margin: 0;
+        display: flex;
     }
 }
 
@@ -1374,7 +1432,7 @@ li {
     width: 396px;
     height: 40px;
     padding: 8px 16px; 
-    margin-right: 24px;
+    margin-left: 24px;
     background-color: transparent;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1385,13 +1443,14 @@ li {
 
   @media screen and (min-width: 480px) {
     .mailing-input {
-
+        margin: 0;
     }
   }
 
 @media screen and (min-width: 768px) { 
     .mailing-input {
-
+        width: 264px;
+        margin-top: 16px;
     }
 }
 
