@@ -587,7 +587,7 @@ ul {
         flex-wrap: wrap;
         padding: 0;
         column-gap: 24px;
-        row-gap: 72px;
+        row-gap: 72px;  
         
     }
 }
@@ -595,7 +595,7 @@ ul {
 @media screen and (min-width: 768px) { 
     .mobile-li{
         width: 100%;
-        max-width: 356px;
+        max-width: 340px;
     }
 }
 
@@ -633,6 +633,12 @@ ul {
     color: #2E2F42;
     margin: 0;
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) { 
+    .mobile-descr {
+        text-align: start;
+    }
 }
 
 .descr-item {
@@ -1444,12 +1450,14 @@ li {
   @media screen and (min-width: 480px) {
     .mailing-input {
         margin: 0;
+        margin-left: 16px;
     }
   }
 
 @media screen and (min-width: 768px) { 
     .mailing-input {
         width: 264px;
+        margin-left: 0;
         margin-top: 16px;
     }
 }
@@ -1502,7 +1510,7 @@ li {
 
 @media screen and (min-width: 768px) { 
     .mailing-btn {
-
+        margin-left: 24px;
     }
 }
 
